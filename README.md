@@ -138,10 +138,10 @@ Saving cutlass_image_basic_bash...
 Successfully built image cutlass_image_basic_bash
 ```
 
-## Run (warning this will never exit):
+## Run
 
 ```
-$ docker run cutlass_image_basic_bash
+$ docker run -it --init cutlass_image_basic_bash
 lol
 lol
 lol
