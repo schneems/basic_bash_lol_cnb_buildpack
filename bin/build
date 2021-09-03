@@ -10,7 +10,9 @@ layers_dir=$1
 cat >> "${layers_dir}/launch.toml" <<EOL
 [[processes]]
 type = "web"
-command = "./app.sh"
+command = "while true; do echo 'lol'; sleep 2; done"
+args = [""]
+direct = false
 EOL
 
 # LIST CONTENTS
